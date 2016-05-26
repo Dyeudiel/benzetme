@@ -1,0 +1,1033 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+
+/* Mobile Layout: 480px and below. 
+ACA VAN LOS ESTILOS DE LA VERSION MÓVIL
+*/
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 86.45%;
+	padding-left: 2.275%;
+	padding-right: 2.275%;
+	clear: none;
+	float: none;
+}
+#div1 {
+}
+.zeroMargin_mobile {
+    margin-left: 0;
+}
+.hide_mobile {
+    display: none;
+}
+header{
+        display: block;
+        width: 480px;
+        height: 190px;
+        background-color: #243D45;
+        margin: 0 auto;
+        color: #fff;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 18px;
+    }
+
+#todo{
+    display: block;
+        width: 480px;
+        height: 190px;
+        background-color: #fff;
+        margin: 0 auto;
+    
+}
+nav{
+    display: block;
+    width: 450px;
+    height: 50px;
+    background-color: #FFF;
+    position: relative;
+ 
+}
+nav ul li{
+    display: block;
+    width: 140px;
+    /*height: 50px;*/
+    text-align: center;
+    color: #243D45;
+    font-family: sans-serif;
+    font-size: 14px;
+    float: left;  
+       
+}
+nav ul li a:hover{
+    color: #584D24; 
+    font-size: 15px;
+    
+}
+nav ul li a{
+    display: block;
+    width: 250px;
+    /*height: 50px;*/
+    text-align: center;
+    color: #243D45;
+    font-family: sans-serif;
+    font-size: 14px;
+       
+}
+.logo{
+    display: block;
+    width: 332px;
+    height: 243px;
+    background-image:
+    url(../Img/logo%20color.png);
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    margin-left: 80px;
+    
+}
+.celular{
+    display: block;
+    color: #2D0732;
+    font-family: sans-serif;
+    font-size: 13px;
+    top: 700px;
+    left: 150px;
+    position: absolute;
+    
+}
+.correo{
+    display: block;
+    color: #26725D;
+    font-family: sans-serif;
+    font-size: 13px;
+    top: 730px;
+    left: 150px;
+    position: absolute;
+    
+}
+.blog{
+    display: block;
+    color: #584D24;
+    font-family: sans-serif;
+    font-size: 13px;
+    top: 760px;
+    left: 150px;
+    position: absolute;
+    
+}
+.foto{
+    display: block;
+    width: 140px;
+    height: 200px;
+    background-image: url(../Img/foto.png);
+    background-repeat: no-repeat;
+    margin-top: 60px;
+    margin-left: 200px;
+
+}
+#morado{
+    display: block;
+    width: 380px;
+    height: 110px;
+    background-color: #2D0732;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: -20px;
+    
+            
+}
+.blanco{
+    color: #FFF;
+    margin-left: 5px;
+    margin-top: 10px;
+    text-align: justify;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 11px;
+    
+}
+.verde{
+    color: #2D0732;
+    margin-left: 170px;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.icono1{
+    margin-top: 60px;
+    margin-left: 230px;
+    position: relative;
+}
+.verde2{
+    color: #2D0732;
+    margin-left: 170px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.icono4{
+    margin-top: 60px;
+    margin-left: 230px;
+    position: relative;
+}
+.verde3{
+    color: #2D0732;
+    margin-left: 170px;
+    margin-top: -80px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.icono3{
+    margin-top: -40px;
+    margin-left: 230px;
+    position: relative;
+}
+.verde4{
+    color: #2D0732;
+    margin-left: 170px;
+    margin-top: -150px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+article{
+    display: block;
+    background-repeat: no-repeat;
+    margin-left: 100px;
+    margin-top: 100px;
+    
+}
+section article{ 
+    display: block;
+    width: 480px;
+    height: 400px;
+    background-color: #243D45;
+    margin: 0 auto;
+    /*color: #fff;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 18px;*/
+    padding-top: 40px;
+    position: relative;
+    
+}
+.nombre{
+   color: #fff; 
+   text-align: left;
+   font-family: sans-serif;
+   font-size: 17px;
+   margin-left: 80px;
+}
+.enviar{
+   color: #fff; 
+   text-align: left;
+   font-family: sans-serif;
+   font-size: 18px;
+   margin-left: 350px;
+}
+.iconoc{
+    margin-top: 60px;
+    margin-left: 220px;
+    position: relative;
+}
+.iconoch{
+    margin-top: 60px;
+    margin-left: 220px;
+    position: relative;
+}
+.iconoch2{
+    margin-top: 40px;
+    margin-left: 220px;
+    position: relative;
+}
+.iconoe{
+    margin-top: -40px;
+    margin-left: 220px;
+    position: relative;
+}
+.iconoe2{
+    margin-top: -180px;
+    margin-left: 220px;
+    position: relative;
+}
+.optica{
+    margin-top: 60px;
+    margin-left: 130px;
+    position: relative;
+}
+.story{
+    margin-top: 60px;
+    margin-left: 200px;
+    position: relative;
+}
+.bima{
+    margin-top: -50px;
+    margin-left: 170px;
+    position: relative;
+}
+ .montaje{
+    color: #2D0732;
+    margin-left: 230px;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.edicion{
+    color: #2D0732;
+    margin-left: 230px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.bogota{
+    margin-top: 60px;
+    margin-left: 180px;
+    position: relative;
+}
+.teatro{
+    margin-top: 60px;
+    margin-left: 200px;
+    position: relative;
+}
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. 
+ACA VAN LOS ESTILOS DE LA VERSION TABLET
+*/
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 91%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.zeroMargin_tablet {
+    margin-left: 0;
+}
+.hide_tablet {
+    display: none;
+}
+    header{
+        display: block;
+        width: 768px;
+        height: 190px;
+        background-color: #243D45;
+        margin: 0 auto;
+        color: #fff;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 20px;
+        
+       
+    }
+#todo{
+    display: block;
+        width: 768px;
+        height: 190px;
+        background-color: #fff;
+        margin: 0 auto;
+    
+}
+nav{
+    display: block;
+    /*width: 450px;*/
+    /*height: 90px;*/
+    background-color: #FFF;
+    position: relative;
+ 
+}
+nav ul li{
+    display: block;
+    width: 140px;
+    /*height: 50px;*/
+    text-align: center;
+    color: #243D45;
+    font-family: sans-serif;
+    font-size: 14px;
+    float: left;  
+       
+}
+nav ul li a:hover{
+    color: #584D24; 
+    font-size: 15px;
+    
+}
+nav ul li a{
+    display: block;
+    width: 600px;
+    text-align: center;
+    color: #243D45;
+    font-family: sans-serif;
+    font-size: 14px;
+    
+       
+}
+.logo{
+    display: block;
+    width: 332px;
+    height: 243px;
+    background-image:
+    url(../Img/logo%20color.png);
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    margin-left: 240px;
+}
+.celular{
+    display: block;
+    color: #2D0732;
+    font-family: sans-serif;
+    font-size: 13px;
+    top: 700px;
+    left: 320px;
+    position: absolute;
+    
+}
+.correo{
+    display: block;
+    color: #26725D;
+    font-family: sans-serif;
+    font-size: 13px;
+    top: 730px;
+    left: 320px;
+    position: absolute;
+    
+}
+.blog{
+    display: block;
+    color: #584D24;
+    font-family: sans-serif;
+    font-size: 13px;
+    top: 760px;
+    left: 320px;
+    position: absolute;
+    
+}
+.foto{
+    display: block;
+    width: 140px;
+    height: 200px;
+    background-image: url(../Img/foto.png);
+    background-repeat: no-repeat;
+    margin-top: 60px;
+    margin-left: 380px;
+
+}
+#morado{
+    display: block;
+    width: 530px;
+    height: 140px;
+    background-color: #2D0732;
+    position: absolute;
+    margin-left: 180px;
+    margin-top: -20px;
+    
+            
+}
+.blanco{
+    color: #FFF;
+    margin-left: 5px;
+    margin-top: 10px;
+    text-align: justify;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 14px;
+    
+}
+.verde{
+    color: #2D0732;
+    margin-left: 330px;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.icono1{
+    margin-top: 60px;
+    margin-left: 350px;
+    position: relative;
+}
+.verde2{
+    color: #2D0732;
+    margin-left: 330px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.icono4{
+    margin-top: 60px;
+    margin-left: 350px;
+    position: relative;
+}
+.verde3{
+    color: #2D0732;
+    margin-left: 330px;
+    margin-top: -80px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.icono3{
+    margin-top: -40px;
+    margin-left: 350px;
+    position: relative;
+}
+.iconoc{
+    margin-top: 60px;
+    margin-left: 380px;
+    position: relative;
+}
+.iconoch{
+    margin-top: 50px;
+    margin-left: 380px;
+    position: relative;
+}
+.iconoe{
+    margin-top: -40px;
+    margin-left: 380px;
+    position: relative;
+}
+article{
+    display: block;
+    background-repeat: no-repeat;
+    margin-left: 100px;
+    margin-top: 100px;
+    
+}
+section article{ 
+    display: block;
+    width: 480px;
+    height: 400px;
+    background-color: #243D45;
+    margin: 0 auto;
+    /*color: #fff;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 18px;*/
+    padding-top: 40px;
+    position: relative;
+    
+}
+.nombre{
+   color: #fff; 
+   text-align: left;
+   font-family: sans-serif;
+   font-size: 17px;
+   margin-left: 80px;
+}
+.enviar{
+   color: #fff; 
+   text-align: left;
+   font-family: sans-serif;
+   font-size: 18px;
+   margin-left: 350px;
+}
+.optica{
+    margin-top: 60px;
+    margin-left: 250px;
+    position: relative;
+}
+.story{
+    margin-top: 60px;
+    margin-left: 350px;
+    position: relative;
+}
+.bima{
+    margin-top: -50px;
+    margin-left: 320px;
+    position: relative;
+}
+    .montaje{
+    color: #2D0732;
+    margin-left: 380px;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.edicion{
+    color: #2D0732;
+    margin-left: 380px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.bogota{
+    margin-top: 60px;
+    margin-left: 330px;
+    position: relative;
+}
+.teatro{
+    margin-top: 60px;
+    margin-left: 350px;
+    position: relative;
+}
+
+
+}
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. 
+ACA VAN LOS ESTILOS DE LA VERSION PANTALLA
+*/
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 88.5%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.zeroMargin_desktop {
+    margin-left: 0;
+}
+.hide_desktop {
+    display: none;
+}
+    header{
+        display: block;
+        width: 1024px;
+        height: 190px;
+        background-color: #243D45;
+        margin: 0 auto;
+        font-family: sans-serif;
+        font-size: 22px;
+    }
+#todo{
+    display: block;
+        width: 1024px;
+        height: 190px;
+        background-color: #fff;
+        margin: 0 auto;
+    
+}
+nav{
+    display: block;
+    /*width: 450px;*/
+    /*height: 90px;*/
+    background-color: #FFF;
+    position: relative;
+ 
+}
+nav ul li{
+    display: block;
+    width: 140px;
+    /*height: 50px;*/
+    text-align: center;
+    color: #243D45;
+    font-family: sans-serif;
+    font-size: 14px;
+    float: left;  
+       
+}
+nav ul li a:hover{
+    color: #584D24; 
+    font-size: 15px;
+    
+}
+nav ul li a{
+    display: block;
+    width: 1000px;
+    text-align: center;
+    color: #243D45;
+    font-family: sans-serif;
+    font-size: 14px;
+    
+       
+}
+.logo{
+    display: block;
+    width: 332px;
+    height: 243px;
+    background-image:
+    url(../Img/logo%20color.png);
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    margin-left: 450px;
+    
+}
+.celular{
+    display: block;
+    color: #2D0732;
+    font-family: sans-serif;
+    font-size: 13px;
+    top: 700px;
+    left: 500px;
+    position: absolute;
+    
+}
+.correo{
+    display: block;
+    color: #26725D;
+    font-family: sans-serif;
+    font-size: 13px;
+    top: 730px;
+    left: 500px;
+    position: absolute;
+    
+}
+.blog{
+    display: block;
+    color: #584D24;
+    font-family: sans-serif;
+    font-size: 13px;
+    top: 760px;
+    left: 500px;
+    position: absolute;
+    
+}
+.foto{
+    display: block;
+    width: 140px;
+    height: 200px;
+    background-image: url(../Img/foto.png);
+    background-repeat: no-repeat;
+    margin-top: 60px;
+    margin-left: 580px;
+
+}
+#morado{
+    display: block;
+    width: 750px;
+    height: 130px;
+    background-color: #2D0732;
+    position: absolute;
+    margin-left: 280px;
+    margin-top: -20px;
+    
+            
+}
+.blanco{
+    color: #FFF;
+    margin-left: 5px;
+    margin-top: 10px;
+    text-align: justify;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 16px;
+    
+}
+.verde{
+    color: #2D0732;
+    margin-left: 550px;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.icono1{
+    margin-top: 60px;
+    margin-left: 480px;
+    position: relative;
+}
+.verde2{
+    color: #2D0732;
+    margin-left: 420px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.icono4{
+    margin-top: 60px;
+    margin-left: 480px;
+    position: relative;
+}
+.verde3{
+    color: #2D0732;
+    margin-left: 410px;
+    margin-top: -80px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.icono3{
+    margin-top: -40px;
+    margin-left: 480px;
+    position: relative;
+}
+article{
+    display: block;
+    background-repeat: no-repeat;
+    margin-left: 100px;
+    margin-top: 100px;
+    
+}
+section article{ 
+    display: block;
+    width: 480px;
+    height: 400px;
+    background-color: #243D45;
+    margin: 0 auto;
+    /*color: #fff;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 18px;*/
+    padding-top: 40px;
+    position: relative;
+    
+}
+.nombre{
+   color: #fff; 
+   text-align: left;
+   font-family: sans-serif;
+   font-size: 17px;
+   margin-left: 80px;
+}
+.enviar{
+   color: #fff; 
+   text-align: left;
+   font-family: sans-serif;
+   font-size: 18px;
+   margin-left: 350px;
+}
+.iconoc{
+    margin-top: 60px;
+    margin-left: 600px;
+    position: relative;
+}
+.iconoch{
+    margin-top: 50px;
+    margin-left: 600px;
+    position: relative;
+}
+.iconoe{
+    margin-top: -40px;
+    margin-left: 600px;
+    position: relative;
+}
+.teoria{
+    color: #2D0732;
+    margin-left: 550px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.chica{
+    color: #2D0732;
+    margin-left: 550px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.estacion{
+    color: #2D0732;
+    margin-left: 550px;
+    margin-top: -80px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.montaje{
+    color: #2D0732;
+    margin-left: 600px;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.edicion{
+    color: #2D0732;
+    margin-left: 600px;
+    margin-top: -10px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+.bogota{
+    margin-top: 60px;
+    margin-left: 550px;
+    position: relative;
+}
+.teatro{
+    margin-top: 40px;
+    margin-left: 570px;
+    position: relative;
+}
